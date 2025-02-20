@@ -1,0 +1,18 @@
+{
+  "name": "@repo/tamagui-config",
+  "version": "0.0.1",
+  "private": true,
+  "types": "./types/index.d.ts",
+  "main": "dist/index",
+  "scripts": {
+    "build": "tamagui-build",
+    "watch": "tamagui-build --watch"
+  },
+  "dependencies": {
+    "@tamagui/config": "^1.125.9",
+    "tamagui": "^1.125.9"
+  },
+  "devDependencies": {
+    "@tamagui/build": "^1.125.9"
+  }
+}
