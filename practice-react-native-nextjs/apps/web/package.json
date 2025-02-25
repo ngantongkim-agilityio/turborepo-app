@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --max-warnings 0"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@repo/ui": "*",
@@ -24,6 +24,9 @@
     "babel-plugin-react-native-web": "^0.19.10",
     "eslint": "^9.20.1",
     "eslint-config-next": "14.0.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "next-transpile-modules": "^10.0.1",
     "typescript": "5.5.4"
   }
 }

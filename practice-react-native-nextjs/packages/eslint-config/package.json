@@ -1,18 +1,31 @@
 {
   "name": "@repo/eslint-config",
   "version": "0.0.1",
-  "private": true,
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
-    "./base": "./base.js",
-    "./next-js": "./next.js"
+    "./eslint-base": "./base.js",
+    "./eslint-nextjs": "./next.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@next/eslint-plugin-next": "^15.1.7",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "@vercel/style-guide": "^6.0.0",
     "eslint": "^9.20.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-next": "^15.1.7",
     "eslint-config-prettier": "^10.0.1",
     "eslint-config-turbo": "^2.4.2",
+    "eslint-plugin-import": "^2.31.0",
     "typescript-eslint": "^8.24.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.20.1"
   }
 }
