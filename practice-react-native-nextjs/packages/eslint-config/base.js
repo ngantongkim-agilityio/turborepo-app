@@ -4,9 +4,6 @@ import turboPlugin from 'eslint-plugin-turbo';
 import tseslint from 'typescript-eslint';
 import onlyWarn from 'eslint-plugin-only-warn';
 
-const [tsEslintBase, tsEslintEslintRecommended, tsEslintRecommend] =
-  tseslint.configs.recommended;
-
 /**
  * A shared ESLint configuration for the repository.
  *
@@ -15,18 +12,7 @@ const [tsEslintBase, tsEslintEslintRecommended, tsEslintRecommend] =
 export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
-  tsEslintBase,
-  tsEslintEslintRecommended,
-  {
-    ...tsEslintRecommend,
-    rules: {
-      ...tsEslintRecommend.rules,
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }
-      ]
-    }
-  },
+  ...tseslint.configs.recommended,
   {
     plugins: {
       turbo: turboPlugin

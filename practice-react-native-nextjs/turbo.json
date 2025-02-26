@@ -7,11 +7,16 @@
       "outputs": ["dist/**", ".next/**"],
       "dependsOn": ["^build"]
     },
+    "web#build": {
+      "dependsOn": ["@repo/ui#build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
     },
-    "lint": {},
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
     "clean": {
       "cache": false
     }
