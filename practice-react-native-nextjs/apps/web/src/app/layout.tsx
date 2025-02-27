@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
+import { NextTamaguiProvider } from './NextTamaguiProvider';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -9,7 +10,7 @@ const RootLayout = ({ children }: RootLayoutProps): JSX.Element => {
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
-        <main>{children}</main>
+        <NextTamaguiProvider>{children}</NextTamaguiProvider>
       </body>
     </html>
   );

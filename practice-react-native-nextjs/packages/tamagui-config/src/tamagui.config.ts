@@ -1,11 +1,13 @@
-import { defaultConfig } from '@tamagui/config/v4'
-import { createTamagui } from 'tamagui'
+import { defaultConfig } from '@tamagui/config/v4';
+import { createTamagui } from 'tamagui';
+import { bodyFont, headingFont } from './fonts';
+import { animations } from './animations';
 
-export const config = createTamagui(defaultConfig)
-
-type CustomConfig = typeof config
-
-// ensure types work
-declare module 'tamagui' {
-  interface TamaguiCustomConfig extends CustomConfig {}
-}
+export const config = createTamagui({
+  ...defaultConfig,
+  animations,
+  fonts: {
+    body: bodyFont,
+    heading: headingFont
+  }
+});

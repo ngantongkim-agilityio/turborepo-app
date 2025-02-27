@@ -15,6 +15,16 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore",
     "prepare": "cd .. && husky practice-react-native-nextjs/.husky"
   },
+  "resolutions": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-refresh": "^0.14.0",
+    "react-native-svg": "15.3.0",
+    "react-native-web": "~0.19.12"
+  },
+  "dependencies": {
+    "@tamagui/cli": "^1.125.19"
+  },
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",

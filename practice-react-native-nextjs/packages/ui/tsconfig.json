@@ -1,8 +1,9 @@
 {
-  "extends": "@repo/typescript-config/react-native-library",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"],
+  "extends": "../typescript-config/react-library.json",
+  "include": ["**/*.ts", "**/*.tsx", "../tamagui-config/src/tamagui.config.ts"],
   "compilerOptions": {
-    "strict": true
-  }
+    "composite": true,
+    "jsx": "react-jsx"
+  },
+  "references": []
 }

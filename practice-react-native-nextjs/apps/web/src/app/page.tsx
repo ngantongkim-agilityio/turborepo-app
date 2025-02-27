@@ -1,15 +1,5 @@
 'use client';
 
-// import { Button } from "@repo/ui";
+import { HomeScreen } from 'app/features/home/screen';
 
-// import styles from '../styles/index.module.css';
-
-export default function Web() {
-  return (
-    <div>
-      <h1>Web</h1>
-
-      {/* <Button text="Test" /> */}
-    </div>
-  );
-}
+export default HomeScreen;

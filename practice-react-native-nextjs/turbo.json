@@ -4,7 +4,7 @@
   "tasks": {
     "build": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", ".next/**"],
+      "outputs": [".next/**", "!.next/cache/**", "build/**", "node_modules/.cache/metro/**"],
       "dependsOn": ["^build"]
     },
     "web#build": {
