@@ -47181,11 +47181,21 @@ var SwitchThemeButton = /* @__PURE__ */ __name(() => {
 
 // ../../packages/ui/src/SwitchRouterButton.tsx
 var import_jsx_runtime75 = require("react/jsx-runtime");
-var SwitchRouterButton = /* @__PURE__ */ __name(({ pagesMode = false }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(Anchor, { text: "center", color: "$color12", href: pagesMode ? "/" : "/pages-example", children: /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)(Button2, { children: [
-    "Change router: ",
-    pagesMode ? "pages" : "app"
-  ] }) });
+var SwitchRouterButton = /* @__PURE__ */ __name(({
+  pagesMode = false
+}) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime75.jsx)(
+    Anchor,
+    {
+      text: "center",
+      color: "$color12",
+      href: pagesMode ? "/" : "/pages-example",
+      children: /* @__PURE__ */ (0, import_jsx_runtime75.jsxs)(Button2, { children: [
+        "Change router: ",
+        pagesMode ? "pages" : "app"
+      ] })
+    }
+  );
 }, "SwitchRouterButton");
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
