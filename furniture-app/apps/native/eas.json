@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 15.0.10",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle",
+        "image": "sdk-52"
+      },
+      "channel": "production"
+    },
+    "preview": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "image": "sdk-52"
+      },
+      "channel": "preview"
+    },
+    "development": {
+      "extends": "preview",
+      "developmentClient": true,
+      "android": {
+        "buildType": "apk",
+        "image": "sdk-52"
+      },
+      "channel": "development"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
