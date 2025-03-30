@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
-const API_URL = process.env.PUBLIC_BASE_URL;
-const PUBLIC_KEY = process.env.PUBLIC_PUBLISHABLE_API_KEY;
+const API_URL = process.env.EXPO_PUBLIC_BASE_URL;
+const PUBLIC_KEY = process.env.EXPO_PUBLIC_PUBLISHABLE_API_KEY;
 
 const defaultOptions = {
   baseURL: API_URL,

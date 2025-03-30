@@ -9,7 +9,7 @@ import type { ReactNode } from 'react';
 import { StyleSheet } from 'react-native';
 import { useServerInsertedHTML } from 'next/navigation';
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme';
-import { config } from '@my/ui';
+import { config } from '@repo/ui';
 import { Provider } from 'app/provider';
 
 export const NextTamaguiProvider = ({ children }: { children: ReactNode }) => {

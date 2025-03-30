@@ -2781,21 +2781,6 @@
           languageName: node
           linkType: hard
         
-        "@logrocket/react-native@npm:^1.47.10":
-          version: 1.48.3
-          resolution: "@logrocket/react-native@npm:1.48.3"
-          peerDependencies:
-            expo: ">=45.0.0"
-            expo-build-properties: "*"
-            react: "*"
-            react-native: ">=0.60.0-rc.0 <1.0.x"
-          peerDependenciesMeta:
-            expo:
-              optional: true
-          checksum: 10/583217f2a97fbc3be90e2db240feffe34fdff472bd15824bc780825eb386732891650e52411fd8401e6e5e623982a38fb23e2037e7b45a2bb0462b9100be96d5
-          languageName: node
-          linkType: hard
-        
         "@motionone/animation@npm:^10.12.0":
           version: 10.18.0
           resolution: "@motionone/animation@npm:10.18.0"
@@ -2860,17 +2845,6 @@
           checksum: 10/0fa9232d132383880d6004522ded763d60f490946584e02bca7f64df98fae07421071f3a85de06aa6ecb52632a47a7586b4143e824e459a87cc852fab657e549
           languageName: node
           linkType: hard
-        
-        "@my/ui@npm:0.0.1, @my/ui@workspace:*, @my/ui@workspace:packages/ui":
-          version: 0.0.0-use.local
-          resolution: "@my/ui@workspace:packages/ui"
-          dependencies:
-            "@repo/config": "npm:0.0.1"
-            "@tamagui/build": "npm:^1.125.26"
-            "@tamagui/toast": "npm:^1.125.26"
-            tamagui: "npm:^1.125.26"
-          languageName: unknown
-          linkType: soft
         
         "@napi-rs/wasm-runtime@npm:^0.2.7":
           version: 0.2.7
@@ -3669,7 +3643,7 @@
           languageName: node
           linkType: hard
         
-        "@repo/config@npm:0.0.1, @repo/config@workspace:packages/config":
+        "@repo/config@npm:*, @repo/config@workspace:packages/config":
           version: 0.0.0-use.local
           resolution: "@repo/config@workspace:packages/config"
           dependencies:
@@ -3716,7 +3690,7 @@
           languageName: unknown
           linkType: soft
         
-        "@repo/hooks@workspace:packages/hooks":
+        "@repo/hooks@npm:*, @repo/hooks@workspace:packages/hooks":
           version: 0.0.0-use.local
           resolution: "@repo/hooks@workspace:packages/hooks"
           dependencies:
@@ -3763,6 +3737,22 @@
         "@repo/typescript-config@npm:*, @repo/typescript-config@workspace:*, @repo/typescript-config@workspace:packages/typescript-config":
           version: 0.0.0-use.local
           resolution: "@repo/typescript-config@workspace:packages/typescript-config"
+          languageName: unknown
+          linkType: soft
+        
+        "@repo/ui@npm:*, @repo/ui@workspace:packages/ui":
+          version: 0.0.0-use.local
+          resolution: "@repo/ui@workspace:packages/ui"
+          dependencies:
+            "@repo/config": "npm:*"
+            "@repo/constants": "npm:*"
+            "@repo/models": "npm:*"
+            "@tamagui/build": "npm:^1.125.26"
+            "@tamagui/toast": "npm:^1.125.26"
+            react: "npm:18.3.1"
+            react-native: "npm:0.76.7"
+            react-native-svg: "npm:15.8.0"
+            tamagui: "npm:^1.125.26"
           languageName: unknown
           linkType: soft
         
@@ -7153,12 +7143,12 @@
           languageName: node
           linkType: hard
         
-        "app@npm:0.0.0, app@workspace:*, app@workspace:packages/app":
+        "app@npm:*, app@npm:0.0.0, app@workspace:packages/app":
           version: 0.0.0-use.local
           resolution: "app@workspace:packages/app"
           dependencies:
-            "@my/ui": "npm:0.0.1"
             "@react-navigation/native": "npm:^6.1.17"
+            "@repo/ui": "npm:*"
             "@tamagui/animations-react-native": "npm:^1.125.26"
             "@tamagui/colors": "npm:^1.125.26"
             "@tamagui/font-inter": "npm:^1.125.26"
@@ -14620,11 +14610,15 @@
           dependencies:
             "@babel/core": "npm:^7.23.7"
             "@expo/webpack-config": "npm:^19.0.0"
-            "@logrocket/react-native": "npm:^1.47.10"
-            "@my/ui": "workspace:*"
             "@react-native-async-storage/async-storage": "npm:1.23.1"
             "@react-navigation/bottom-tabs": "npm:^7.2.0"
             "@react-navigation/native": "npm:^7.0.14"
+            "@repo/constants": "npm:*"
+            "@repo/hooks": "npm:*"
+            "@repo/models": "npm:*"
+            "@repo/stores": "npm:*"
+            "@repo/ui": "npm:*"
+            "@repo/utils": "npm:*"
             "@tamagui/babel-plugin": "npm:^1.125.26"
             "@tanstack/react-query": "npm:5.66.9"
             "@types/react": "npm:~18.3.18"
@@ -14645,6 +14639,7 @@
             expo-updates: "npm:~0.27.4"
             react: "npm:18.3.1"
             react-dom: "npm:18.3.1"
+            react-hook-form: "npm:^7.54.1"
             react-native: "npm:0.76.7"
             react-native-gesture-handler: "npm:2.20.2"
             react-native-reanimated: "npm:~3.16.1"
@@ -16438,6 +16433,15 @@
             react: ^16.6.0 || ^17.0.0 || ^18.0.0
             react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
           checksum: 10/73d6383dd5d5794cad3837cf6b71d7e23afa6f3ba745e50a9d0d6bf42ff0ab175e4292f250ffe757f4bd782e64c37c4583fb884340cd63891deb33e144628661
+          languageName: node
+          linkType: hard
+        
+        "react-hook-form@npm:^7.54.1":
+          version: 7.55.0
+          resolution: "react-hook-form@npm:7.55.0"
+          peerDependencies:
+            react: ^16.8.0 || ^17 || ^18 || ^19
+          checksum: 10/900e06064c1b4977f2e3e249a0f91742ae6bd1f2109701b80a9280b1c2b4bee8aac26aed7104371101eadad724f0bbe0215499e84623e6375007489ae850fe8e
           languageName: node
           linkType: hard
         
@@ -19908,9 +19912,9 @@
           version: 0.0.0-use.local
           resolution: "web@workspace:apps/web"
           dependencies:
-            "@my/ui": "workspace:*"
             "@react-native-async-storage/async-storage": "npm:1.23.1"
-            "@repo/typescript-config": "workspace:*"
+            "@repo/typescript-config": "npm:*"
+            "@repo/ui": "npm:*"
             "@tamagui/config": "npm:^1.125.26"
             "@tamagui/next-plugin": "npm:^1.125.26"
             "@tamagui/next-theme": "npm:^1.125.26"
@@ -19918,7 +19922,7 @@
             "@types/node": "npm:^20.10.6"
             "@types/react": "npm:^18.2.18"
             "@types/react-dom": "npm:^18.2.18"
-            app: "workspace:*"
+            app: "npm:*"
             axios: "npm:^1.5.1"
             babel-plugin-react-native-web: "npm:^0.19.10"
             eslint: "npm:^8.56.0"

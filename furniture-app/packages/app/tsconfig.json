@@ -6,7 +6,7 @@
     "jsx": "react-jsx",
     "paths": {
       "app/*": ["./packages/app/*"],
-      "@my/ui/*": ["./packages/ui/*"]
+      "@repo/ui/*": ["./packages/ui/*"]
     }
   },
   "references": []

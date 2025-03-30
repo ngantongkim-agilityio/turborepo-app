@@ -6,7 +6,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
-      "@screens": ["./src/screens/index.ts"]
+      "@screens": ["./src/screens/index.ts"],
+      "@interfaces": ["./src/interfaces/index.ts"],
+      "@mocks": ["./src/mocks/index.ts"]
     }
   }
 }

@@ -11,27 +11,16 @@ import { GET } from './services';
 import { authStore } from '@repo/stores';
 
 // Types
-import { IResponseApi } from '@repo/models';
-
-type ResponseData = {
-  listings: any[];
-  page: number;
-  pages?: any[];
-};
+import { IResponseApi} from '@repo/models';
 
 export const useProducts = () => {
   const useFetchProducts = (initPageParam: number) => {
     const [authKey] = authStore((state) => [state.authKey]);
 
-    return useInfiniteQuery<
-      IResponseApi<ResponseData>,
-      Error,
-      IResponseApi<ResponseData>,
-      string[]
-    >({
+    return useInfiniteQuery({
       queryKey: [ROUTES.PRODUCTS],
-      queryFn: ({ pageParam }) => {
-        return GET<IResponseApi<ResponseData>>(
+      queryFn: ({ pageParam = 1 }) => {
+        return GET<IResponseApi<any>>(
           `${ROUTES.PRODUCTS}?page=${pageParam}&per_page=6`,
           {
             headers: {

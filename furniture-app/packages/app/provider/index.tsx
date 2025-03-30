@@ -6,7 +6,7 @@ import {
   ToastProvider,
   config,
   isWeb
-} from '@my/ui';
+} from '@repo/ui';
 import { ToastViewport } from './ToastViewport';
 
 export function Provider({

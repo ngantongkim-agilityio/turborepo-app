@@ -1,41 +1,42 @@
 {
-  "name": "web",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit",
-    "prettier:check": "prettier --check --ignore-unknown .",
-    "test": "pnpm prettier:check && pnpm lint"
-  },
-  "dependencies": {
-    "@my/ui": "*",
-    "@react-native-async-storage/async-storage": "1.23.1",
-    "@tamagui/config": "^1.125.26",
-    "@tamagui/next-theme": "^1.125.26",
-    "@tanstack/react-query": "5.66.9",
-    "app": "*",
-    "axios": "^1.5.1",
-    "next": "^14.0.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-native-svg": "15.11.2",
-    "react-native-web": "^0.19.10",
-    "tamagui": "^1.125.26",
-    "zustand": "4.4.4"
-  },
-  "devDependencies": {
-    "@repo/typescript-config": "*",
-    "@tamagui/next-plugin": "^1.125.26",
-    "@types/node": "^20.10.6",
-    "@types/react": "^18.2.18",
-    "@types/react-dom": "^18.2.18",
-    "babel-plugin-react-native-web": "^0.19.10",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "14.0.4",
-    "typescript": "5.5.4"
-  }
-}
+              "name": "web",
+              "version": "1.0.0",
+              "private": true,
+              "scripts": {
+                        "dev": "next dev",
+                        "build": "next build",
+                        "start": "next start",
+                        "lint": "next lint --max-warnings 0",
+                        "check-types": "tsc --noEmit",
+                        "prettier:check": "prettier --check --ignore-unknown .",
+                        "test": "pnpm prettier:check && pnpm lint"
+              },
+              "dependencies": {
+                        "@react-native-async-storage/async-storage": "1.23.1",
+                        "@repo/ui": "*",
+                        "@tamagui/config": "^1.125.26",
+                        "@tamagui/next-theme": "^1.125.26",
+                        "@tanstack/react-query": "5.66.9",
+                        "app": "*",
+                        "axios": "^1.5.1",
+                        "next": "^14.0.4",
+                        "react": "18.3.1",
+                        "react-dom": "18.3.1",
+                        "react-native-svg": "15.11.2",
+                        "react-native-web": "^0.19.10",
+                        "tamagui": "^1.125.26",
+                        "zustand": "4.4.4"
+              },
+              "devDependencies": {
+                        "@repo/typescript-config": "*",
+                        "@tamagui/next-plugin": "^1.125.26",
+                        "@types/node": "^20.10.6",
+                        "@types/react": "^18.2.18",
+                        "@types/react-dom": "^18.2.18",
+                        "babel-plugin-react-native-web": "^0.19.10",
+                        "eslint": "^8.56.0",
+                        "eslint-config-next": "14.0.4",
+                        "typescript": "5.5.4"
+              }
+    }
+        
