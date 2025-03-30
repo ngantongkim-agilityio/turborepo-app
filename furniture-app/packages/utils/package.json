@@ -1,0 +1,22 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  },
+  "dependencies": {
+    "@repo/constants": "*",
+    "@repo/models": "*",
+    "expo-secure-store": "14.0.1",
+    "react-native": "0.76.7",
+    "tsup": "^8.0.1"
+  }
+}
