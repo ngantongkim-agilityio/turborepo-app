@@ -155,18 +155,16 @@ const Login = () => {
                 <Button
                   variant='primary'
                   height={56}
-                  justify="center"
-                  items="center"
+                  justify='center'
+                  items='center'
                   onPress={handleSubmit(handleLogin)}
                 >
                   Log in
                 </Button>
               </View>
               <Link href={'/(auth)/(signup)'}>
-                <Stack width="$full" justify="center" items="center">
-                  <Text fontSize={16}  >
-                    Sign up
-                  </Text>
+                <Stack width='$full' justify='center' items='center'>
+                  <Text fontSize={16}>Sign up</Text>
                 </Stack>
               </Link>
             </Stack>

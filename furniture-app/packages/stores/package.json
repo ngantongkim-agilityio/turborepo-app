@@ -1,25 +1,24 @@
 {
-              "name": "@repo/stores",
-              "version": "0.0.0",
-              "types": "./src",
-              "main": "src/index.ts",
-              "module:jsx": "src",
-              "scripts": {
-                        "build": "tsup",
-                        "clean": "rm -rf dist",
-                        "lint": "eslint . --max-warnings 0"
-              },
-              "devDependencies": {
-                        "@repo/eslint-config": "*",
-                        "@repo/typescript-config": "*",
-                        "tsup": "^8.0.1",
-                        "typescript": "5.5.4"
-              },
-              "dependencies": {
-                        "@react-native-async-storage/async-storage": "1.23.1",
-                        "@repo/constants": "*",
-                        "@repo/models": "*",
-                        "zustand": "4.4.4"
-              }
-    }
-        
+  "name": "@repo/stores",
+  "version": "0.0.0",
+  "types": "./src",
+  "main": "src/index.ts",
+  "module:jsx": "src",
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "tsup": "^8.0.1",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@repo/constants": "*",
+    "@repo/models": "*",
+    "zustand": "4.4.4"
+  }
+}

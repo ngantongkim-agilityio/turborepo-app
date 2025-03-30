@@ -11,7 +11,7 @@ import { GET } from './services';
 import { authStore } from '@repo/stores';
 
 // Types
-import { IResponseApi} from '@repo/models';
+import { IResponseApi } from '@repo/models';
 
 export const useProducts = () => {
   const useFetchProducts = (initPageParam: number) => {

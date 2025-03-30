@@ -4,10 +4,7 @@
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["./assets/*"],
-      "@layouts": ["./src/layouts/index.ts"],
-      "@constants": ["./src/constants/index.ts"],
-      "@components": ["./src/components/index.ts"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [

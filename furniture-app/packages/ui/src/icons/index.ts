@@ -11,4 +11,4 @@ export * from './Bag';
 export * from './Logout';
 export * from './Arrow';
 export * from './Share';
-export * from './Logo'
+export * from './Logo';

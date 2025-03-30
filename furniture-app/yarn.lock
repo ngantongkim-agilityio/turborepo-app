@@ -19913,8 +19913,13 @@
           resolution: "web@workspace:apps/web"
           dependencies:
             "@react-native-async-storage/async-storage": "npm:1.23.1"
+            "@repo/constants": "npm:*"
+            "@repo/hooks": "npm:*"
+            "@repo/models": "npm:*"
+            "@repo/stores": "npm:*"
             "@repo/typescript-config": "npm:*"
             "@repo/ui": "npm:*"
+            "@repo/utils": "npm:*"
             "@tamagui/config": "npm:^1.125.26"
             "@tamagui/next-plugin": "npm:^1.125.26"
             "@tamagui/next-theme": "npm:^1.125.26"

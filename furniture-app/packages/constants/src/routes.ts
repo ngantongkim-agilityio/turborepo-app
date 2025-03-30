@@ -11,3 +11,10 @@ export enum ROUTES_NAME {
   PROFILE_TAB = 'profile',
   NOT_FOUND = '+not-found'
 }
+
+export const APP_ROUTES = {
+  HOME: '/',
+  LOGIN: '/login',
+  SIGNUP: '/signup',
+  DASHBOARD: '/dashboard'
+};

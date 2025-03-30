@@ -6,17 +6,17 @@ const SignUpLayout = () => {
   return (
     <Stack
       screenOptions={{
-        headerTransparent: true,
+        headerTransparent: true
       }}
     >
       <Stack.Screen
-        name="index"
+        name='index'
         options={{
           headerShown: false
         }}
       />
       <Stack.Screen
-        name="verify-code"
+        name='verify-code'
         options={{
           headerShown: false
         }}

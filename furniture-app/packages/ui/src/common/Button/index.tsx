@@ -33,8 +33,8 @@ const ButtonFrame = styled(XStack, {
   height: 56,
   cursor: 'pointer',
   borderWidth: 0,
-  justify: "center",
-  items: "center",
+  justify: 'center',
+  items: 'center',
   gap: '$2.5',
 
   variants: {

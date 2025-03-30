@@ -42,6 +42,13 @@ module.exports = () => {
     typescript: {
       ignoreBuildErrors: true
     },
+    redirects: async () => [
+      {
+        source: '/',
+        destination: '/login',
+        permanent: true
+      }
+    ],
     modularizeImports: {
       '@tamagui/lucide-icons': {
         transform: `@tamagui/lucide-icons/dist/esm/icons/{{kebabCase member}}`,

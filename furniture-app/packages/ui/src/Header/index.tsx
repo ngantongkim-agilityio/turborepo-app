@@ -21,12 +21,12 @@ const HeaderBase = ({
   isHome = false,
   leftIcon = BackIcon,
   rightIcon,
-  onPressLeft = () => { },
-  onPressRight = () => { }
+  onPressLeft = () => {},
+  onPressRight = () => {}
 }: IHeaderProps) => {
   return (
     <Stack width='100%' testID='test-header' paddingStart={20} paddingEnd={20}>
-      <Stack flexDirection='row' justify="space-between" items="center">
+      <Stack flexDirection='row' justify='space-between' items='center'>
         {leftIcon && (
           <Button
             background={'transparent'}
@@ -55,7 +55,7 @@ const HeaderBase = ({
             </Text>
           </Stack>
         ) : (
-          <Text fontWeight={'700'} color='$dark' fontSize={16} items="center">
+          <Text fontWeight={'700'} color='$dark' fontSize={16} items='center'>
             {title}
           </Text>
         )}
