@@ -65,7 +65,7 @@ const LoginPage = () => {
 
         !!key && setAuthKey({ ...key, uuid });
         setUser(user);
-        console.log('test 123');
+        console.log('test 1234');
         // router.push('/home');
       },
       onError: (error) => {
