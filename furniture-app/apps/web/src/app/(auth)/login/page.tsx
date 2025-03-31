@@ -143,11 +143,7 @@ const LoginPage = () => {
                     Log in
                   </Button>
                 </Stack>
-                <Link
-                  href={APP_ROUTES.SIGNUP}
-                >
-                  Sign up
-                </Link>
+                <Link href={APP_ROUTES.SIGNUP}>Sign up</Link>
               </Stack>
             </View>
           </Stack>
