@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
     marginRight: 32,
     marginTop: 32,
     backgroundColor: '$light',
-    shadowColor: '$shadow.primary',
+    shadowColor: '$shadowPrimary',
     shadowOffset: {
       width: 0,
       height: 10

@@ -65,7 +65,7 @@ const LoginPage = () => {
 
         !!key && setAuthKey({ ...key, uuid });
         setUser(user);
-        console.log('test 1234');
+        console.log('test 12');
         // router.push('/home');
       },
       onError: (error) => {
@@ -98,7 +98,7 @@ const LoginPage = () => {
                 Welcome back
               </Text>
             </Stack>
-            <View style={styles.boxShadow}>
+            <View>
               <Stack>
                 <Controller
                   name='email'
@@ -132,7 +132,7 @@ const LoginPage = () => {
                 />
               </Stack>
               <Stack pt={20} mt={20}>
-                <View style={styles.buttonBoxShadow}>
+                <Stack mb={20}>
                   <Button
                     variant='primary'
                     height={56}
@@ -142,9 +142,8 @@ const LoginPage = () => {
                   >
                     Log in
                   </Button>
-                </View>
+                </Stack>
                 <Link
-                  className='font-semibold text-primary text-sm'
                   href={APP_ROUTES.SIGNUP}
                 >
                   Sign up
@@ -159,39 +158,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-const styles = StyleSheet.create({
-  boxShadow: {
-    width: '100%',
-    paddingVertical: 20,
-    marginTop: 10,
-    backgroundColor: '$light',
-    shadowColor: '$shadowPrimary',
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 24,
-    elevation: 15
-  },
-  buttonBoxShadow: {
-    borderRadius: 8,
-    marginBottom: 28,
-    backgroundColor: '$light',
-    shadowColor: 'shadowSecondary',
-    shadowOffset: {
-      width: 0,
-      height: 10
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 24,
-    elevation: 15
-  },
-  lineStyle: {
-    width: '35%',
-    borderRadius: 2,
-    height: 1,
-    backgroundColor: '$bgLight'
-  }
-});
